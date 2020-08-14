@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Poppins:300,400&display=swap");
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  background: grey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red; 
+}
+
+body{
+  background-color: #000000;
+}
+
+.button {
+  background-color: #4CAF50;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-code {
+  border-radius: 10px;
+  background-color: #053C5E;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: #120000;
+  a {
+    margin: 0 28px;
+    text-decoration: none;
+    color: #fffdfd;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Poppins";
+  }
+}
+
+.center{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  .page {
+    position: absolute;
+    .inner {
+      display: flex;
+      justify-content: center;
+      h1 {
+        color: #fffdfd;
+        font-family: "Bebas Neue";
+        font-size: 52px;
+        letter-spacing: 0.1rem;
+        .line-wrap {
+          overflow: hidden;
+          height: 66px;
+        }
+      }
+    }
+  }
+}
+
+.page-enter {
+  opacity: 0;
+}
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+  transition-delay: 600ms;
+}
+.page-exit {
+  opacity: 1;
+}
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.paper_color {
+  background-color: #120000;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+.card-container {
+	background-color: #120000;
+	border-radius: 20px;
+	box-shadow: 25px 25px 25px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 400px;
+	max-width: 100%;
+  text-align: center;
+  margin: 5em;
+}
+
+
+.card-container .round {
+	border: 1px solid #0D88D6;
+	border-radius: 50%;
+	padding: 7px;
+}
+
+button.primary {
+	background-color: #0D88D6;
+	border: 1px solid #0D88D6;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+a.ghost {
+	background-color: transparent;
+  color: #0f44a4;
+  border: 1px solid #0D88D6;
+	border-radius: 3px;
+	color: #0D88D6;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+  padding: 10px 25px;
+}
+
+button.primary.ghost:hover {
+	color: #0D88D6;
+}
+
+
+.button-grey {
+  background-color: grey;
+  border: 1px solid black;
+	border-radius: 50px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+  padding: 10px 25px;
+  margin:5px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+
+.skills {
+	background-color: #120000;
+	text-align: center;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid #120000;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 22px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+
+.about-container {
+	background-color: #120000;
+	border-radius: 20px;
+	box-shadow: 25px 25px 25px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding: 30px;
+	position: relative;
+  width: 99%;
+	//max-width: 80%;
+  text-align: center;
+  margin: auto auto;
+  display: inline-block;
+
+}
+
+//timeline
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 250px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 160px;
+  height: 3px;
+  background: #fff;
+}
+
+.timeline ol li:last-child {
+  width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #F45B69;
+}
+
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  padding: 15px;
+  font-size: 1rem;
+  white-space: normal;
+  color: black;
+  background: white;
+}
+
+.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top: 100%;
+  border-width: 8px 8px 0 0;
+  border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top: -8px;
+  border-width: 8px 0 0 8px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* TIMELINE ARROWS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline .arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timeline .arrows .arrow__prev {
+  margin-right: 20px;
+}
+
+.timeline .disabled {
+  opacity: .5;
+}
+
+.timeline .arrows img {
+  width: 45px;
+  height: 45px;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .timeline ol,
+  .timeline ol li {
+    width: auto; 
+  }
+  
+  .timeline ol {
+    padding: 0;
+    transform: none !important;
+  }
+  
+  .timeline ol li {
+    display: block;
+    height: auto;
+    background: transparent;
+  }
+  
+  .timeline ol li:first-child {
+    margin-top: 25px;
+  }
+  
+  .timeline ol li:not(:first-child) {
+    margin-left: auto;
+  }
+  
+  .timeline ol li div {
+    width: 94%;
+    height: auto !important;
+    margin: 0 auto 25px;
+  }
+  
+  .timeline ol li div {
+    position: static;
+  }
+  
+  .timeline ol li:nth-child(odd) div {
+    transform: none;
+  }
+  
+  .timeline ol li:nth-child(odd) div::before,
+  .timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: none;
+    border-left: 1px solid white;
+    height: 25px;
+  }
+  
+  .timeline ol li:last-child,
+  .timeline ol li:nth-last-child(2) div::before,
+  .timeline ol li:not(:last-child)::after,
+  .timeline .arrows {
+    display: none;
+  }
+}
+
+.profile-social-links {
+  width: 218px;
+  display: inline-block;
+  float: right;
+  margin: 0px;
+  padding: 15px 20px;
+  background: #FFFFFF;
+  margin-top: 50px;
+  text-align: center;
+  opacity: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-animation: moveIn 1s 3.1s ease forwards;
+  animation: moveIn 1s 3.1s ease forwards;
+}
